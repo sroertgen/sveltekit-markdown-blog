@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { LayoutData } from './$types';
+  import { base } from "$app/paths";
 
   export let data: LayoutData;
 </script>
@@ -22,7 +23,7 @@
         .sort((a, b) => b[1] - a[1])
         .slice(0, 6) as [category, _]}
         <li>
-          <a href="/{category}" class="text-neutral-300 hover:text-blue-100 font-semibold transition uppercase">
+          <a href="{base}/{category}" class="text-neutral-300 hover:text-blue-100 font-semibold transition uppercase">
             {category}
           </a>
         </li>
@@ -33,7 +34,7 @@
       {#each data.articles.slice(0, 5) as article}
         <li>
           <a
-            href="/{article.Categories[0] ?? 'uncategorized'}/{article.Slug}"
+            href="{base}/{article.Categories[0] ?? 'uncategorized'}/{article.Slug}"
             class="text-neutral-300 hover:text-blue-100 font-semibold text-sm transition uppercase"
           >
             {article.Title}

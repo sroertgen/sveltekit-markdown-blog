@@ -1,10 +1,12 @@
 <script lang="ts">
   import { stringColor } from '$lib/helpers';
   import classnames from 'classnames';
+  import { base } from "$app/paths";
+
   export let article: Partial<Article>;
   export let wide = false;
 
-  $: href = `/${article.Categories?.at(0) ?? 'uncategorized'}/${article.Slug}`;
+  $: href = `${base}/${article.Categories?.at(0) ?? 'uncategorized'}/${article.Slug}`;
 </script>
 
 {#if wide}
@@ -24,7 +26,7 @@
       <div class="flex gap-2">
         {#each article.Categories || [] as category}
           <a
-            href="/{category}"
+            href="{base}/{category}"
             class="text-white text-xs font-semibold px-2 py-1 rounded-md uppercase"
             style="background:{stringColor(category)}"
           >
@@ -58,7 +60,7 @@
       <div class="flex gap-2">
         {#each article.Categories || [] as category}
           <a
-            href="/{category}"
+            href="{base}/{category}"
             class="text-white text-xs font-semibold px-2 py-1 rounded-md uppercase"
             style="background:{stringColor(category)}"
           >

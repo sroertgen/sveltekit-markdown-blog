@@ -2,7 +2,7 @@
     Title: The Role of Language in Communication
     Author: ChatGPT
     Published: 2023-01-06 00:14
-    Categories: language
+    Categories: Nutzungsszenarien
     Thumbnail: https://images.pexels.com/photos/278887/pexels-photo-278887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 -->
 

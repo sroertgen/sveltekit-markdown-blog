@@ -2,7 +2,7 @@
     Title: The Importance of Sleep
     Author: ChatGPT
     Published: 2023-01-02 12:14
-    Categories: health,sleep
+    Categories: Curricula-Gruppe
     Thumbnail: https://images.pexels.com/photos/1028741/pexels-photo-1028741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 -->
 

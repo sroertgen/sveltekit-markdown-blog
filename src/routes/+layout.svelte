@@ -6,6 +6,7 @@
   import { Menu } from '@steeze-ui/feather-icons';
   import { navigating } from '$app/stores';
   import { fade, fly } from 'svelte/transition';
+  import { base } from "$app/paths";
 
   export let data: LayoutData;
   let mobileMenuOpen = false;
@@ -24,7 +25,7 @@
   <div class="fixed inset-0 p-4 z-20 h-min" transition:fly={{ y: -100 }}>
     <div class="rounded-lg bg-neutral-900 p-4 grid gap-3">
       {#each featuredCategories as category}
-        <a href="/{category}" class="text-text-gray-700 hover:text-blue-100 font-semibold transition uppercase">
+        <a href="{base}/{category}" class="text-text-gray-700 hover:text-blue-100 font-semibold transition uppercase">
           {category}
         </a>
       {/each}
@@ -42,12 +43,12 @@
 
 <main class="max-w-5xl mx-auto p-4 min-h-screen">
   <header class="flex gap-6 items-center mb-6">
-    <a href="/">
+    <a href="{base}/">
       <img src={Logo} alt={import.meta.env._NAME} class="h-6" />
     </a>
     <nav class="hidden md:flex gap-3 items-center">
       {#each featuredCategories as category}
-        <a href="/{category}" class="text-text-gray-700 hover:text-blue-100 font-semibold transition uppercase">
+        <a href="{base}/{category}" class="text-text-gray-700 hover:text-blue-100 font-semibold transition uppercase">
           {category}
         </a>
       {/each}
@@ -78,8 +79,8 @@
       {import.meta.env._NAME}
     </span>
     <nav class="flex gap-3 legal">
-      <a href="/privacy">Privacy Policy</a>
-      <a href="/terms-of-service">Terms of Service</a>
+      <a href="{base}/privacy">Privacy Policy</a>
+      <a href="{base}/terms-of-service">Terms of Service</a>
     </nav>
   </div>
 </footer>

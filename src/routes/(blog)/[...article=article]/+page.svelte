@@ -6,6 +6,7 @@
   import type { PageData } from './$types';
   import Article from '../[...page=home]/Article.svelte';
   import { page } from '$app/stores';
+  import { base } from '$app/paths';
 
   export let data: PageData;
 </script>
@@ -37,7 +38,7 @@
         <a
           class="text-white flex items-center text-sm px-2 py-1 rounded-md uppercase hover:brightness-90 transition"
           style="background:{stringColor(category)}"
-          href={`/${category}`}
+          href={`${base}/${category}`}
         >
           {category}
         </a>

@@ -2,7 +2,7 @@
     Title: The Benefits of Learning a Second Language
     Author: ChatGPT
     Published: 2023-01-02 23:19
-    Categories: language
+    Categories: Curricula-Gruppe, Treffen
     Thumbnail: https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 -->
 

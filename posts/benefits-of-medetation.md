@@ -2,7 +2,7 @@
     Title: The Benefits of Meditation
     Author: ChatGPT
     Published: 2023-01-02 
-    Categories: health
+    Categories: Nutzungsszenarien
     Thumbnail: https://placekitten.com/720/500
 -->
 

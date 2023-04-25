@@ -6,6 +6,8 @@
   import { Icon } from '@steeze-ui/svelte-icon';
   import { ChevronLeft, ChevronRight } from '@steeze-ui/feather-icons';
   import classnames from 'classnames';
+  import { base } from "$app/paths";
+
 
   export let data: PageData;
   $: pageNumber = Number($page.params.page) || Number($page.params.page.split('/')?.at(1)) || 1;
@@ -85,7 +87,7 @@
     <div class="flex justify-center mb-6">
       <div class="inline-flex bg-white/5 w-min rounded-lg">
         {#if pageNumber > 1}
-          <a class="page-btn" href={pageUrl(pageNumber - 1)}>
+          <a class="page-btn" href="{base}/{pageUrl(pageNumber - 1)}">
             <Icon src={ChevronLeft} class="w-4 h-4" />
           </a>
         {/if}
@@ -94,13 +96,13 @@
             class={classnames('page-btn', {
               '!bg-white/10': i + 1 === pageNumber,
             })}
-            href={pageUrl(i + 1)}
+            href="{base}/{pageUrl(i + 1)}"
           >
             {i + 1}
           </a>
         {/each}
         {#if articles.length > articlesPerPage * pageNumber}
-          <a class="page-btn" href={pageUrl(pageNumber + 1)}>
+          <a class="page-btn" href="{base}/{pageUrl(pageNumber + 1)}">
             <Icon src={ChevronRight} class="w-4 h-4" />
           </a>
         {/if}

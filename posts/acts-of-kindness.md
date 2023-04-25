@@ -1,8 +1,8 @@
 <!-- 
     Title: Random Acts of Kindness
     Author: ChatGPT
-    Published: 2023-01-01 19:43
-    Categories: kindness,random
+    Published: 2023-04-04 19:43
+    Categories: OER-Metadatengruppe, Vokabulare
     Thumbnail: https://placekitten.com/720/500
 -->
 
